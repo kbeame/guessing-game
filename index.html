@@ -1,0 +1,49 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>The guessing game</h1>
+    <p>How much do you know about Iris Carrera?</p>
+    <script>
+      var user = prompt('Hello there! What is your name?');
+      alert('Hi ' + user + "! Let\'s play a guessing game. I\'m going to ask you questions about me.");
+
+      var answer1 = prompt('Alrighty ' + user + '. Answer the proceeding yes or no questions with Y or N. Is my hair naturally blue?');
+
+      if(answer1 === 'N') {
+        alert('By golly ' + user + ', you are right!');
+      } else {
+        alert('Blue isn\'t my natural hair color, ' + user + '. Don\'t be silly! My natural hair color is black.');
+      }
+
+      var answer2 = prompt('Next question! Is baseball my favorite sport?');
+
+      if(answer2 === 'Y') {
+        alert('Way to be wrong ' + user + '! My favorite sport is rugby.');
+      } else {
+        alert('Great job, ' + user + '! My favorite sport is rugby.');
+      }
+
+      var answer3 = prompt('Last yes or no question for ya ' + user + '! Does I like candy?');
+
+      if(answer3 === 'Y' ) {
+        alert('You\'re right ' + user + '. I love candy! Great job.');
+      } else {
+        alert('Wrong answer ' + user + '. Of course I love candy! Who doesn\'t?');
+      }
+
+      var answer4 = prompt('One last question for ya ' + user + '! Guess what number I\'m thinking about! It\'s a number between 1 and 25. What number am I thinking of?');
+
+      answer4 = parseInt(answer4);
+      if (answer4 == 16) {
+        alert('Correct! Great guess ' + user + '!');
+      } else if (answer4 > 16) {
+        alert('Nope. Too high! The answer is 16.');
+      } else if(answer4 < 16) {
+        alert('Nope. Too low! The answer is 16.');
+      }
+      else{}
+
+    </script>
+  </body>
+  </html>
