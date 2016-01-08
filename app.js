@@ -75,50 +75,47 @@ for (var i = 0; i < (aboutIris.length); i++) {
   questions();
 }
 
-// function questionFour() {
-// var answer4 = prompt('One last question for ya ' + user + '! Guess what number I\'m thinking about! It\'s a number between 1 and 25. What number am I thinking of?');
-// console.log('The user answered Question 4: ' + answer4);
-//
-// answer4 = parseInt(answer4);
-// if (answer4 == 16) {
-//   res4.textContent = 'Correct! Great guess ' + user + '!';
-//   //alert('Correct! Great guess ' + user + '!');
-//   counter += 1;
-// } else if (answer4 > 16) {
-//   res4.textContent = 'Nope. Too high! The answer is 16.';
-//   //alert('Nope. Too high! The answer is 16.');
-// } else if(answer4 < 16) {
-//   res4.textContent = 'Nope. Too low! The answer is 16.';
-//   //alert('Nope. Too low! The answer is 16.');
-// }
-// else{}
-//   alert('Alrighty ' + user + ', your final score is ' + counter + '. Hit OK for the bonus round!');
-// }
-//
-//
-// function questionFive() {
-// var responseTo5 = false;
-// while(responseTo5 === false) {
-//   var answer5 = prompt('Bonus round! Guess what number I\'m thinking about this time! It\'s still a number between 1 and 25. what number am I thinking of? I will ask till you get it right!');
-//   answer5 = parseInt(answer5);
-//   if(answer5 == 8) {
-//     res5.textContent = 'You got it ' + user + '! Thanks for playing!';
-//     //alert('You got it ' + user + '! Thanks for playing!');
-//     var responseTo5 = true;
-//   } else if(answer5 > 8) {
-//     res5.textContent = 'Too high! Try again.';
-//     //alert('Too high! Try again.');
-//   } else if(answer5 < 8){
-//     res5.textContent = 'Too low! Try again.';
-//     //alert('Too low! Try again.');
-//   } else {}
-// }
-// console.log('The user answered Question 5: ' + answer5);
-//
-// }
-//
-// questionOne();
-// questionTwo();
-// questionThree();
-// questionFour();
-// questionFive();
+function questionFour() {
+var answer4 = prompt('One last question for ya ' + user + '! Guess what number I\'m thinking about! It\'s a number between 1 and 25. What number am I thinking of?');
+console.log('The user answered Question 4: ' + answer4);
+
+answer4 = parseInt(answer4);
+if (answer4 == 16) {
+  res4.textContent = 'Correct! Great guess ' + user + '!';
+  //alert('Correct! Great guess ' + user + '!');
+  counter += 1;
+} else if (answer4 > 16) {
+  res4.textContent = 'Nope. Too high! The answer is 16.';
+  //alert('Nope. Too high! The answer is 16.');
+} else if(answer4 < 16) {
+  res4.textContent = 'Nope. Too low! The answer is 16.';
+  //alert('Nope. Too low! The answer is 16.');
+}
+else{}
+  alert('Alrighty ' + user + ', your final score is ' + counter + '. Hit OK for the bonus round!');
+}
+
+
+function questionFive() {
+var responseTo5 = false;
+while(responseTo5 === false) {
+  var answer5 = prompt('Bonus round! Guess what number I\'m thinking about this time! It\'s still a number between 1 and 25. what number am I thinking of? I will ask till you get it right!');
+  answer5 = parseInt(answer5);
+  if(answer5 == 8) {
+    res5.textContent = 'You got it ' + user + '! Thanks for playing!';
+    //alert('You got it ' + user + '! Thanks for playing!');
+    var responseTo5 = true;
+  } else if(answer5 > 8) {
+    res5.textContent = 'Too high! Try again.';
+    //alert('Too high! Try again.');
+  } else if(answer5 < 8){
+    res5.textContent = 'Too low! Try again.';
+    //alert('Too low! Try again.');
+  } else {}
+}
+console.log('The user answered Question 5: ' + answer5);
+
+}
+
+questionFour();
+questionFive();

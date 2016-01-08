@@ -12,5 +12,12 @@ This has 2 files apart from this README:
 index.html
 app.js
 
-Code written by Sean navigated by Iris. Jan. 7 2016. 
+Code written by Sean navigated by Iris. Jan. 7 2016.
 Added functions and removed alerts.
+
+Code Written by Kat Beame navigated by Iris Carrera Jan. 8 2016
+Created an array for the first three questions
+Created a for loop that displays the answer on the webpage
+Made a style.css file
+Changed the color of the responses to correspond to answer's correct-ness
+https://github.com/kbeame/
