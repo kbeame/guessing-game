@@ -28,12 +28,12 @@ var aboutIris = [
   ,
   [
   'Next question! Is baseball my favorite sport?',
-  'Y',
-  'YES',
-  'Way to be wrong ' + user + '! My favorite sport is rugby.',
   'N',
   'NO',
   'Great job, ' + user + '! My favorite sport is rugby',
+  'Y',
+  'YES',
+  'Way to be wrong ' + user + '! My favorite sport is rugby.',
   'Wrong! That answer is out of scope.',
   res2
   ]
@@ -57,13 +57,16 @@ var answer1 = prompt(aboutIris[i][0]);
 
 if(answer1.toUpperCase() === aboutIris[i][1]|| answer1.toUpperCase() === aboutIris[i][2] ) {
   aboutIris[i][8].textContent = aboutIris[i][3];
+  aboutIris[i][8].className = 'right';
   //alert('By golly ' + user + ', you are right!');
   counter += 1;
 } else if (answer1.toUpperCase() === aboutIris[i][4] || answer1.toUpperCase() === aboutIris[i][5]){
   aboutIris[i][8].textContent = aboutIris[i][6];
+  aboutIris[i][8].className = 'wrong';
   //alert('Blue isn\'t my natural hair color, ' + user + '. Don\'t be silly! My natural hair color is black.');
 } else {
   aboutIris[i][8].textContent = aboutIris[i][7];
+  aboutIris[i][8].className = 'wrong';
   //alert('Wrong! That answer is out of scope.');
 }
 }
