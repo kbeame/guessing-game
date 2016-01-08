@@ -25,21 +25,45 @@ var aboutIris = [
   'Wrong! That answer is out of scope.',
   res1
   ]
+  ,
+  [
+  'Next question! Is baseball my favorite sport?',
+  'Y',
+  'YES',
+  'Way to be wrong ' + user + '! My favorite sport is rugby.',
+  'N',
+  'NO',
+  'Great job, ' + user + '! My favorite sport is rugby',
+  'Wrong! That answer is out of scope.',
+  res2
+  ]
+  ,
+  [
+  'Last yes or no question for ya ' + user + '! Do I like candy?',
+  'Y' ,
+  'YES',
+  'You\'re right ' + user + '. I love candy! Great job.',
+  'N',
+  'NO',
+  'Wrong answer ' + user + '. Of course I love candy! Who doesn\'t?',
+  'Wrong! That answer is out of scope.',
+  res3
+  ]
 ]
 
 
 function questions() {
-var answer1 = prompt(aboutIris[0][0]);
+var answer1 = prompt(aboutIris[i][0]);
 
-if(answer1.toUpperCase() === aboutIris[0][1]|| answer1.toUpperCase() === aboutIris[0][2] ) {
-  aboutIris[0][8].textContent = aboutIris[0][3];
+if(answer1.toUpperCase() === aboutIris[i][1]|| answer1.toUpperCase() === aboutIris[i][2] ) {
+  aboutIris[i][8].textContent = aboutIris[i][3];
   //alert('By golly ' + user + ', you are right!');
   counter += 1;
-} else if (answer1.toUpperCase() === aboutIris[0][4] || answer1.toUpperCase() === aboutIris[0][5]){
-  aboutIris[0][8].textContent = aboutIris[0][6];
+} else if (answer1.toUpperCase() === aboutIris[i][4] || answer1.toUpperCase() === aboutIris[i][5]){
+  aboutIris[i][8].textContent = aboutIris[i][6];
   //alert('Blue isn\'t my natural hair color, ' + user + '. Don\'t be silly! My natural hair color is black.');
 } else {
-  aboutIris[0][8].textContent = aboutIris[0][7];
+  aboutIris[i][8].textContent = aboutIris[i][7];
   //alert('Wrong! That answer is out of scope.');
 }
 }
@@ -48,40 +72,6 @@ for (var i = 0; i < (aboutIris.length); i++) {
   questions();
 }
 
-// function questionTwo() {
-// var answer2 = prompt('Next question! Is baseball my favorite sport?');
-// console.log('The user answered Question 2: ' + answer2);
-//
-// if(answer2.toUpperCase() === 'Y' || answer2.toUpperCase() === 'YES') {
-//   res2.textContent = 'Way to be wrong ' + user + '! My favorite sport is rugby.';
-//   //alert('Way to be wrong ' + user + '! My favorite sport is rugby.');
-// } else if(answer2.toUpperCase() === 'N' || answer2.toUpperCase() === 'NO'){
-//   res2.textContent = 'Great job, ' + user + '! My favorite sport is rugby';
-//   //alert('Great job, ' + user + '! My favorite sport is rugby.');
-//   counter += 1;
-// } else {
-//   res2.textContent = 'Wrong! That answer is out of scope.';
-//   //alert('Wrong! That answer is out of scope.');
-// }
-// }
-//
-// function questionThree() {
-// var answer3 = prompt('Last yes or no question for ya ' + user + '! Do I like candy?');
-// console.log('The user answered Question 3: ' + answer3);
-//
-// if(answer3.toUpperCase() === 'Y' || answer3.toUpperCase() === 'YES' ) {
-//   res3.textContent = 'You\'re right ' + user + '. I love candy! Great job.';
-//   //alert('You\'re right ' + user + '. I love candy! Great job.');
-//   counter += 1;
-// } else if(answer3.toUpperCase() === 'N' || answer3.toUpperCase() === 'NO') {
-//   res3.textContent = 'Wrong answer ' + user + '. Of course I love candy! Who doesn\'t?';
-//   //alert('Wrong answer ' + user + '. Of course I love candy! Who doesn\'t?');
-// } else {
-//   res3.textContent = 'Wrong! That answer is out of scope.';
-//   //alert('Wrong! That answer is out of scope.');
-// }
-// }
-//
 // function questionFour() {
 // var answer4 = prompt('One last question for ya ' + user + '! Guess what number I\'m thinking about! It\'s a number between 1 and 25. What number am I thinking of?');
 // console.log('The user answered Question 4: ' + answer4);
