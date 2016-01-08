@@ -12,6 +12,23 @@ var counter = 0;
 
 alert('Hi ' + user + "! Let\'s play a guessing game. I\'m going to ask you questions about me.");
 
+var aboutIris = [
+  ['Alrighty ' + user + '. Answer the proceeding yes or no questions with Y or N. Is my hair naturally blue?',
+  'N',
+  'NO',
+  'By golly ' + user + ', you are right!',
+  'Y',
+  'YES',
+  'Blue isn\'t my natural hair color, ' + user + '. Don\'t be silly! My natural hair color is black.',
+  'Wrong! That answer is out of scope.'
+  ]
+  [
+
+
+  ]
+]
+
+
 function questionOne() {
 var answer1 = prompt('Alrighty ' + user + '. Answer the proceeding yes or no questions with Y or N. Is my hair naturally blue?');
 console.log('The user answered Question 1: ' + answer1);
@@ -110,5 +127,3 @@ questionTwo();
 questionThree();
 questionFour();
 questionFive();
-
-
