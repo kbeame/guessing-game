@@ -11,3 +11,6 @@ The 5th question uses a while loop to ask user to guess a number; if wrong they 
 This has 2 files apart from this README:
 index.html
 app.js
+
+Code written by Sean navigated by Iris. Jan. 7 2016. 
+Added functions and removed alerts.
